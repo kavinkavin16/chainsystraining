@@ -1,0 +1,83 @@
+Microsoft Windows [Version 10.0.19043.985]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\KAVINNARESHGR\eclipse-workspace\book-app>rd .git /S/Q
+
+C:\Users\KAVINNARESHGR\eclipse-workspace\book-app>git init
+Initialized empty Git repository in C:/Users/KAVINNARESHGR/eclipse-workspace/book-app/.git/
+
+C:\Users\KAVINNARESHGR\eclipse-workspace\book-app>git add .
+
+C:\Users\KAVINNARESHGR\eclipse-workspace\book-app>git commit -u "first commit"
+error: pathspec 'first commit' did not match any file(s) known to git
+
+C:\Users\KAVINNARESHGR\eclipse-workspace\book-app>git commit -m "first commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'KAVINNARESHGR@DESKTOP-O07LN5O.(none)')
+
+C:\Users\KAVINNARESHGR\eclipse-workspace\book-app>
+
+C:\Users\KAVINNARESHGR\eclipse-workspace\book-app>git config user.email "insert github email here"
+
+C:\Users\KAVINNARESHGR\eclipse-workspace\book-app>git config user.email "kavinnares@gmail.com"
+
+C:\Users\KAVINNARESHGR\eclipse-workspace\book-app>git config user.name "insert github real name here"
+
+C:\Users\KAVINNARESHGR\eclipse-workspace\book-app>git config user.name "kavinkavin16"
+
+C:\Users\KAVINNARESHGR\eclipse-workspace\book-app>git init
+Reinitialized existing Git repository in C:/Users/KAVINNARESHGR/eclipse-workspace/book-app/.git/
+
+C:\Users\KAVINNARESHGR\eclipse-workspace\book-app>git add .
+
+C:\Users\KAVINNARESHGR\eclipse-workspace\book-app>git commit -m "first commit"
+[master (root-commit) a9ae896] first commit
+ 18 files changed, 153 insertions(+)
+ create mode 100644 .classpath
+ create mode 100644 .project
+ create mode 100644 .settings/org.eclipse.jdt.core.prefs
+ create mode 100644 Book.sql
+ create mode 100644 bin/com/chainsys/book/dao/BookDAO.class
+ create mode 100644 bin/com/chainsys/book/dao/BookDAOImpl.class
+ create mode 100644 bin/com/chainsys/book/exception/BookNotFoundException.class
+ create mode 100644 bin/com/chainsys/book/model/Book.class
+ create mode 100644 bin/com/chainsys/book/service/BookService.class
+ create mode 100644 bin/com/chainsys/book/service/BookServiceImpl.class
+ create mode 100644 bin/com/chainsys/book/test/BookClient.class
+ create mode 100644 src/com/chainsys/book/dao/BookDAO.java
+ create mode 100644 src/com/chainsys/book/dao/BookDAOImpl.java
+ create mode 100644 src/com/chainsys/book/exception/BookNotFoundException.java
+ create mode 100644 src/com/chainsys/book/model/Book.java
+ create mode 100644 src/com/chainsys/book/service/BookService.java
+ create mode 100644 src/com/chainsys/book/service/BookServiceImpl.java
+ create mode 100644 src/com/chainsys/book/test/BookClient.java
+
+C:\Users\KAVINNARESHGR\eclipse-workspace\book-app>git branch -M main
+
+C:\Users\KAVINNARESHGR\eclipse-workspace\book-app>git remote add origin https://github.com/kavinkavin16/book-app.git
+
+C:\Users\KAVINNARESHGR\eclipse-workspace\book-app>git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 39, done.
+Counting objects: 100% (39/39), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (29/29), done.
+Writing objects: 100% (39/39), 5.54 KiB | 809.00 KiB/s, done.
+Total 39 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/kavinkavin16/book-app.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+C:\Users\KAVINNARESHGR\eclipse-workspace\book-app>rd .git /S/Q
